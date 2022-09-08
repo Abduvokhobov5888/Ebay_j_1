@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="185dp"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:gravity="center"
+        android:background="@drawable/shape_boreder_round_white">
+
+        <ImageView
+            android:id="@+id/free_image_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/watch" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bose QuietComfort Earbuds"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$199.00"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$279.00"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29% OFF"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

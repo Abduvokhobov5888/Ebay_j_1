@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ebay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/ic_baseline_shopping_cart_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:background="@drawable/shape_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="#90ffffff"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:hint="Search"/>
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp">
+
+                <LinearLayout
+                    android:background="@drawable/shape_border"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_save_alt_24"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saved"
+                        android:textSize="15sp"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical">
+
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_category_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Categories"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_discount_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deals"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#fffafa"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Up to 70% off bedding and bath"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stock you linen closet with towels, sheets and more"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_boreder_round_black"
+                        android:text="Freshen up"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#dc143c"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The right parts at the rigth prices"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evertything you need for your vehicle"
+                        android:textSize="15sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_boreder_round_white"
+                        android:text="Let`s ride!"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#f0ffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Up to 60% off your favorites"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="#00008b"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Refurbished phones from trusted sellers with a warranty."
+                            android:textSize="15sp"
+                            android:textColor="#00008b"
+                            android:layout_marginRight="60dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="normal"/>
+
+                        <TextView
+                            android:gravity="center_horizontal|center_vertical"
+                            android:layout_width="100dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/shape_boreder_round_blue"
+                            android:text="Get them now"
+                            android:textColor="#ffffff" />
+
+
+
+                    <LinearLayout
+                        android:paddingBottom="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today's Deals - All With Free Shipping"
+                            android:textColor="#ffffff"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="15dp"/>
+
+                        <LinearLayout
+                            android:paddingBottom="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+      </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        android:background="#1c1c1c"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_home_24"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_baseline_person_24"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_baseline_search_24"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_baseline_notifications_24"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_baseline_local_offer_24"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
